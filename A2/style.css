@@ -1,0 +1,152 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ **/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body 
+{
+	padding: 2% 3%;
+	margin: 2% 3%;	
+	font-family:"Arial", Helvetica, Sans-Serif;
+	color:#332805;
+	background-image:url('http://faculty.scf.edu/bourenv/assignments/supplements/images/texture.gif');
+	/*The CSS properties specified above will be inherited by the child elements i.e. all elements within body*/
+}
+
+.linkstyle:link {text-decoration:none;}    /* unvisited link */
+.linkstyle:visited {color:#660033;} /* visited link */
+.linkstyle:hover {color:grey;}   /* mouse over link */
+.linkstyle:active {color:red;}  /* selected link */
+
+h1
+{
+	text-align: left;
+	font-size: 175%;
+	line-height: 320%;
+}
+
+h2
+{
+	font-size: 150%;
+	margin-top:3.5%;
+}
+
+h3
+{
+	font-size: 105%;
+	margin-top:2%;
+}
+
+hr
+{
+    height:.2em;/*This is an elastic layout hence sizes are defined using ems*/
+    background-color:#4B2C0C;  
+ }
+ p
+{
+ 	margin-bottom:0.1%;
+}
+
+div
+{
+ 	margin-bottom:0.5%;
+}
+ img
+{
+	float:left;
+	padding-right:1%;
+
+}
+
+#meta
+{
+	font-size: 1.3em;
+	border-style:ridge;
+	border:0.18em solid #332805;
+	border-radius: 0.5em;
+	/*-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;*/
+	padding:0.5%;
+	margin-bottom: 3%;
+}
+
+#analyst
+{
+	text-align:left;
+	font-weight: bold;
+}
+
+.right_align
+{
+	float:right;
+}
+
+#content
+{
+	border-style:ridge;
+	border:0.20em solid #332805;
+	border-radius: 0.5em;
+	/*-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;*/
+	padding:2%;
+}
+
+ul
+{
+	list-style-type:disc;
+	padding: 2%;
+	margin: 2%;
+}
+
+.metaproject
+{
+	font-size: 1.04em;
+	font-family: "Comic Sans MS" !important;
+	margin-bottom: 2%
+	/*The !important declaration here overrides the inherited font. This is an example of casacading*/ 
+}
+

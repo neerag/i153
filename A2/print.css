@@ -1,0 +1,126 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body 
+{
+	padding: 2% 2%;
+	margin: 2% 2%;
+	font-family:"Times New Roman", Garamond, Serif;
+	font-size: 85%;
+	/*The CSS properties specified above will be inherited by the child elements i.e. all elements within body*/
+}
+
+.linkstyle:after {content:" [" attr(href) "] ";}  
+.linkstyle:link {text-decoration:none; color:#000000;}
+
+h1
+{
+	text-align: left;
+	font-size: 175%;
+	line-height: 120%;
+}
+
+h2
+{
+	font-size: 150%;
+	margin-top:2.5%;
+}
+
+h3
+{
+	font-size: 105%;
+	margin-top:1.5%;
+}
+hr
+{
+    height:.2em;/*This is an elastic layout hence sizes are defined using ems*/
+    background-color:#000000;  
+ }
+img
+{
+	display:none;
+
+}
+ p
+{
+ 	margin-bottom:1.2%;
+}
+div
+{
+ 	margin-bottom:1.7%;
+}
+#meta
+{
+	font-size: 1.2em;
+	margin-bottom: 3%;
+}
+
+#analyst
+{
+	text-align:left;
+	font-weight: bold;	
+}
+
+.right_align
+{
+	float:right;
+}
+
+ul
+{
+	list-style-type:disc;
+	padding: 2%;
+	margin: 2%;
+}
+.metaproject
+{
+	font-size: 1.04em;
+	font-family: "Comic Sans MS" !important;
+	/*The !important declaration here overrides the inherited font. This is an example of casacading*/ 
+}
+
+
