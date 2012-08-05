@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<!--This tag indicates what version and grammar/standars of html are being used for the page-->
+<html>
+<!-- This tag tells the browser that it is an HTML Document-->
+<head>
+	<meta charset="UTF-8">
+	<title>The WWW Journey</title>
+</head>
+<!--The head tag provides meta information about the page to the browser-->
+
+<body>
+<!-- The Body tag defines the body of the document and hence we will see all the content of our page in here-->
+	<img src="web_design.jpg" width="220" height="220" alt="web" align="left">
+<!--The image tag above inserts a left aligned image of WWW on our page--> 
+	<h1> <em> From www to WWW.......</em></h1>
+	<!--This is where we define the main heading of our page-->
+	<div>
+	<!-- This is the first division of the page and has two paragraphs in it defined using p tags-->
+		<p>
+			The web has always amazed me, esp. so because I spend most of my waking life in and around it. So, I got curious to know what goes on behind the scenes and how does it really work. I like to call it the world wizard coz it seems to know everything ;) and one of my interactions with the world wizard led me to discover a <a href="http://www.ischool.berkeley.edu/courses/153">course</a> being offered about the wonders of this world wizard, this summer at Berkeley. So I decided to take it and widen my perspective of how www (wonder of the world wizard) works and learn more about WWW (World Wide Web)
+		</p>
+		<p>
+			I have had one week of class so far and things look pretty darn cool !! Turns out that we will be able to build our own website by the end of the course. We even have a <a href="http://courses.ischool.berkeley.edu/i153/su12/">course website</a> to keep track of stuff we are learning.
+
+		</p>
+	</div>
+
+	<h2> <em> Behind the scenes</em></h2>
+	<!-- This is the first subheading for the next block of content-->
+	<div>
+	<!--This defines the next block of content for the page which has paragraphs, ordered and unordered lists-->
+		<p>
+			Looks like there is a lot going on back here and there is a lot to learn. For now the list seems pretty long :)
+			<img src="howitworks.jpg" width="270" height="270" alt="web" align="right">
+		</p>
+		<ul>
+		<!--here we define an unordered list-->
+			<li>How the web works - Client Server Interaction</li>
+			<li>The language client server use to talk - HTTP</li>
+			<li>the basics - HTML</li>
+			<li>the next big thing - HTML5</li>
+			<li>Various browsers and tools - Firefox, Chrome, IE</li>
+			<li>and lots more !</li>
+		</ul> 
+		<p>
+			Since there is so much going on, there are some standards that govern stuff. Two most important bodies to refer to for standard are - 
+		</p>
+		<ol>
+		<!--here we define an ordered list-->
+			<li>W3C - World Wide Web Constorium</li>
+			<li>WHATWG - Web Hypertext Application Technology Working Group</li>
+		</ol>
+	</div>
+	<h2> <em> HTML5</em></h2>
+<!-- This is the next subheading for the next block of content-->
+		<p> 
+			HTML is the upcoming shining star and everyone is waiting for it. The table below lists some features of HTML5 and we will keep adding to it as we learn more.
+		</p>
+	<div>
+		<table border ="5" cellpadding="2" cellspacing="2" width=80%>
+		<!--here we define a table with three rows and two columns-->
+			<tr><th bgcolor="#CCC99">Feature</th><th bgcolor="#CCC99">Details</th></tr>
+			<tr><td>Canvas</td><td>used to draw graphics on the fly, via scripting</td></tr>
+			<tr><td>Geolocation</td><td>used to get the geographical position of a user</td></tr>
+			<tr><td>Video</td><td>used to embed video/movie on a web page</td></tr>
+		</table>
+	</div>
+
+	<h3> <em> Learning by doing </em></h3>
+	<!-- This is a level 3 heading for the next block of content-->
+	<div> 
+	<!--This division has some HTML5 tags-->
+		<h4> <em> Video Tag </em></h4>
+		<!--This tag embeds a video on the page-->
+			<video width="320" height="240" controls="controls">
+  				<source src="movie.mp4" type="video/mp4" />
+  				<source src="movie.ogg" type="video/ogg" />
+  				Your browser does not support the video tag.
+			</video>
+
+		<h4> <em> Canvas Tag </em></h4>
+		<!--This tag embeds a canvas on the page, we will learb how to draw on the canvas soon-->
+			<canvas id="myCanvas" width="200" height="100"></canvas>
+
+		<h4> <em> Details Tag </em></h4>
+		<!--This tag is used to add details to the page, here we have included some copyright details-->
+			<details>
+				<summary>Copyright.</summary>
+				<p> - by Neera Grover. All Rights Reserved.</p>
+				<p>All content and graphics on this web site are the property of Neera Grover.</p>
+			</details>
+
+		<h4> <em> Address Tag </em></h4>
+		<!--This tag is used to add the address to the page-->
+			<address>
+				Written by <a href="mailto:grover.neera@yahoo.com">Neera Grover</a>.<br /> 
+				Visit us at:<br />
+				Hastings Terrace, Fremont<br />
+				CA<br />
+				USA
+			</address>
+
+		<h4> <em> Audio Tag </em></h4>
+		<!--This tag is used to embedd an audio in the page-->
+			<audio controls="controls">
+  				<source src="song.ogg" type="audio/ogg" />
+  				<source src="song.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+</body>
+</html>
