@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Exercises</title>
+
+<script type="text/javascript" src="Jquery.js"></script>
+<script type="text/javascript" src="Jquery-ui.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+// write a script that hides the RED box when "hide is clicked, and shows it when show is clicked
+$(document).ready(function(){
+  $("#hide").click(function(){
+  	$("#hidebox").hide();
+  	});
+  });
+$(document).ready(function(){
+  $("#show").click(function(){
+  	$("#hidebox").show();
+  	});
+  });
+</script>
+
+<script type="text/javascript">
+// write a script that displays an alert box on clicking the button
+$(document).ready(function(){
+  $("#clicked").click(function(){
+    alert("Button was clicked");
+    });
+  });
+</script>
+
+<script type="text/javascript"> 
+// write a script that slides the ORANGE box when "Click to slide box" is clicked
+
+/*$(document).ready(function(){
+  $("div#clickslide p").click(function()
+  {
+   $("div#slider").hide("slide", { direction: "right" }, 3000);
+    });
+  });*/
+$(document).ready(function(){
+  $("div#clickslide p").click(function()
+  {
+   $("div#slider").slideToggle("slow");
+    });
+  });
+</script>
+
+
+<script type="text/javascript">
+// write a script that fades the MAROON box when the THE BOX is clicked
+$(document).ready(function(){
+  $("div#fader").click(function(){
+   $(this).fadeOut(1000,(function()
+      {$("#hidden").fadeIn(1000);}
+    ));
+  });
+   });
+$(document).ready(function(){
+  $("#hidden").click(function() 
+    {
+      $(this).fadeOut(1000);
+      $("div#fader").fadeIn(1000);
+    }
+    );
+   });
+</script>
+
+
+<script type="text/javascript"> 
+// write a script that animates the BEIGE box to 300X300 PX then to 100X100px when the button "Click me, I'm a button" is clicked
+$(document).ready(function(){
+  $("#resize").click(function(){
+    $("div#animator").animate({height:300},"slow");
+    $("div#animator").animate({width:300},"slow");
+    $("div#animator").animate({height:100},"slow");
+    $("div#animator").animate({width:100},"slow");
+  });
+});
+</script> 
+
+
+<script type="text/javascript">
+//write a script that makes the picture of the baby girrafe draggable. So that you can drag the girraffe all around the page
+$(document).ready(function(){
+  $("div#draggable").draggable();
+  });
+</script>
+
+
+
+<script type="text/javascript">
+// write a script here so that when you hover on each element (milk, bread, chips, socks) three red asterisks appear beside the element and then disappears when you remove the cursor
+$(document).ready(function(){
+  $("li").hover(function () {
+      $(this).append($("<span> ***</span>"));
+      }, 
+  function () {
+      $(this).find("span:last").remove();
+      }
+)
+});
+</script>
+
+<link href="jquery.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css"> 
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#FCC;
+border:solid 1px #c3c3c3;
+text:
+}
+div.panel
+{
+height:450px;
+display:none;
+}
+#draggable{
+	position:relative;
+ }
+</style>
+
+</head>
+
+<body>
+  <h1> Assignment3</h1>
+  <hr/>
+  <div id=stitchnote>
+    <p> Dhawal and Rami, I thought I will stitch in a note here -
+        Doing these assignments is a lot of fun and I get to learn a lot, Thanks :) !!</p>
+  </div>
+
+<button id="clicked">Click Me</button>
+
+<div id="hide"> Hide </div>
+
+<div id="show"> Show </div>
+
+<div id="hidebox">
+	<p>I'm a ghost.</p>
+  </div>
+   
+<div id="clickslide">
+	<p> Click to slide box </p>
+</div>
+
+<div id="slider">
+	<p> Oh hey, I slid. </p>
+</div>
+
+<p>This box will fade into oblivion if you click on it...</p>
+<button id="hidden">Bring brown box</button>
+
+<div id="fader">
+</div>
+
+<br /><br />
+
+<button id="resize">Resize this green box!</button>
+
+<div id="animator">
+</div>
+
+<h2>Please drag me!</h2>
+
+<div id="draggable">
+<img src="logo.jpg" border="0"/> 
+</div>
+
+ <ul>
+  <li>milk</li>
+  <li>bread</li>
+  <li>chips</li>
+  <li>socks</li>
+</ul>
+
+
+</body>
+</html>
+
