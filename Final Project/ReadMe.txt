@@ -1,0 +1,1 @@
+This application fetches the top daily trends from twitter and pulls the corresponding pics from Instagram.
