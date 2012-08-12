@@ -1,0 +1,45 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body 
+{
+    background-image:url('polaroid_@2X.png');
+    /*The CSS properties specified above will be inherited by the child elements i.e. all elements within body*/
+} 
+.font
+{
+	font-family: 'Eagle Lake', cursive !important;
+}
+.tweets
+{
+  font-family: 'Eagle Lake', cursive !important;
+  font-size: 120%;
+ }
+.center
+{
+	text-align:center;
+}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
